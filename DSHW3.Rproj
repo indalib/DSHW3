@@ -11,3 +11,6 @@ Encoding: UTF-8
 
 RnwWeave: Sweave
 LaTeX: pdfLaTeX
+
+#data.table code
+flights1[carrier == "AA" & origin == "JFK" & air_time < 500 & distance < 2000, .(origin, dest, carrier, air_time, distance)]
